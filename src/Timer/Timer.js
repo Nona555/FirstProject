@@ -27,7 +27,7 @@ class Timer extends React.Component {
     //     console.log('Unmount');
     // }
     render () {
-        // console.log(this.state);
+        console.log(this.state);
         return (
             <>
                 <div>{this.props.name}</div>
