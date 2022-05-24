@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rectangle {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.buttonsContainer {
+    width: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
