@@ -3,6 +3,7 @@ import './App.css';
 // import Functional from './Functional/Functional';
 // import Button from './Button/Button';
 import ColorfullDiv from './ColorfullDiv/ColorfullDiv';
+import HamoApp from './Hamo/HamoApp';
 import ToDo from './ToDoList/ToDo';
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <Timer name={'Timer'} /> */}
       {/* <Button /> */}
       {/* <ColorfullDiv /> */}
-      <ToDo />
+      {/* <ToDo /> */}
+	  <HamoApp />
     </div>
   );
 }
