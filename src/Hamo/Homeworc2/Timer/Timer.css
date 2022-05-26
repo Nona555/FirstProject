@@ -1,0 +1,44 @@
+.container3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tamdiv{
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 200px;
+	color: white;
+	font-size: 30px;
+}
+
+.butdiv {
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.batStart {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	padding: 0;
+	/* background-color:  green; */	
+}
+
+.butRes{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	padding: 0;
+	background-color: slategray;
+}
+
+.back {
+	width: 200px;
+	height: 300px;
+	background-color: black;
+}

@@ -8,7 +8,7 @@ const FooButton = ["+", "-", "/", "*"];
 let num = 0;
 let num1 = 0;
 let num2 = 0;
-let errText = ""
+let errText = false
 
 function Result () {
 	const [numbr, setnumbr ] = useState(num)
@@ -17,7 +17,7 @@ function Result () {
 
 
 	const sum = (e) => {
-		if(typeof +num1 === "number" & typeof +num2 === "number" ){
+		if( +num1 + +num2 || (+num1 && +num2) === 0 ){
 			if(e.target.id === "+"){
 				setnumbr(num = +num1 + +num2)
 			}else if(e.target.id === "-"){
@@ -28,8 +28,8 @@ function Result () {
 				setnumbr(num = +num1 * +num2)
 			}
 		}else {
-			// setText( errText = "Error: X and Y must be Numbers" ) 
-			// setnumbr( num = 0)
+			setText( errText = "Error: X and Y must be Numbers" ) 
+			setnumbr( num = 0)
 		}
 		
 	};
