@@ -5,8 +5,8 @@ import Timer from "./Homeworc2/Timer/Timer"
 function HamoApp () {
 	return (
 		<div>
-			{/* <Calculator /> */}
-			<Result />
+			<Calculator />
+			{/* <Result /> */}
 			{/* <Timer /> */}
 		</div>
 	)
