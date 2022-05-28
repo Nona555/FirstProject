@@ -15,7 +15,6 @@ let disabled = "disabled"
 function Timer() {
 	const [tim, settim ] = useState(null)
 	const num = () => {
-			
 			settim(tim6++)
 			if(tim6 === 10) {
 				tim6 = 0
@@ -49,8 +48,6 @@ function Timer() {
 				start = "stop"
 				green = "red"
 			}
-		
-		
 	}
 	return (
 		<div className='container3'>
@@ -75,7 +72,7 @@ function Timer() {
 							id = null
 							disabled = ""
 						}else{
-							id = setInterval(() => num(), 1000)
+							id = setInterval(num, 1000)
 							disabled = "disabled"
 						}
 					}}>{start}</button>

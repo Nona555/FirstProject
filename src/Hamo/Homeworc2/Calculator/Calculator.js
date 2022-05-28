@@ -1,28 +1,24 @@
 import Button from './Button/Button'
 import { useState } from "react"
-import './Calculator.css'
+import './Calculator.css';
+import React from 'react';
 
 
 const buttonName = ["+", "Reset", "-"]
 
-
-let num = 0
-
-function Calculator (e) {
-	const [numbr, setnumbr ] = useState(num)
+function Calculator () {
+	const [ num, setNum ] = useState(0);
 	const onClick = (e) =>{
 		if(e.target.className === "+"){
-			setnumbr(++num)
+			setNum(num + 1)
 		}
 		if(e.target.className === "-"){
-			setnumbr(--num)
+			setNum(num - 1)
 		}
 		if(e.target.className === "Reset"){
-			setnumbr(num=0)
+			setNum(0)
 		}
 	}
-
-
 	return (
 		<div className='container1'>
 			<div className='number'>
