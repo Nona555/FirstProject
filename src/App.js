@@ -5,11 +5,12 @@
 // import HamoApp from './Hamo/HamoApp';
 // import ToDo from './ToDoList/ToDo';
 import styles from './App.scss';
+import Header from './Header/Header';
 
 function App() {
   return (
     <div>
-        App
+        <Header />
     </div>
   );
 }
