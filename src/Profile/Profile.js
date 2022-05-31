@@ -1,7 +1,10 @@
-function Profile(props) {
+import logo from '../assets/icons/header/facebook.svg'
+
+function Profile() {
     return (
         <div>
-            Name: {props.username}
+            Profile Componenet
+            <img src={logo}/>
         </div>
     )
 }

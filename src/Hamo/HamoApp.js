@@ -11,7 +11,7 @@ function HamoApp () {
 			{/* <Result /> */}
 			{/* <Timer /> */}
 			{/* <SignUp /> */}
-			<SidebarRight />
+			{/* <SidebarRight /> */}
 		</div>
 	)
 }
