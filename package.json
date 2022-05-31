@@ -9,6 +9,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "sass": "sass src/Sass:src/Css --watch --no-source-map",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -36,6 +37,6 @@
     ]
   },
   "devDependencies": {
-    "sass": "sass/src/Sass:src/Css --watch --no-source-map"
+    "sass": "file:sass/src/Sass:src/Css --watch --no-source-map"
   }
 }
