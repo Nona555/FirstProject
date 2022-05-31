@@ -1,4 +1,4 @@
-import './NumInput.css'
+import './NumInput.scss'
 
 function NumInput(props) {
 	return (
