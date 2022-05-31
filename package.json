@@ -36,6 +36,6 @@
     ]
   },
   "devDependencies": {
-    "sass": "sass/src/Sass:src/Css --watch --no-source-map"
+    "sass": "file:sass/src/Sass:src/Css --watch --no-source-map"
   }
 }
