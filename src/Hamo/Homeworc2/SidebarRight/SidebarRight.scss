@@ -1,0 +1,86 @@
+.SideRight{
+	position: relative;
+
+	.info {
+		position: absolute;
+		right: 0%;
+		transition: all 0.3s ease 0s;
+		height: 600px;
+		border: 1px solid black;
+		z-index: 9;
+		background-color: rgba(255, 255, 255, 0.8);
+		position: fixed;
+
+
+		.pad {
+			padding: 20px;
+		}
+
+		.button_close {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+
+			
+		}
+		
+		.close{
+			top: 60px;
+			border: none;
+			position: inherit;
+			
+		}
+
+		h3 , p {
+			margin: 0;
+		}
+	}
+
+	.butt_setting {
+		position: absolute;
+		right: 5%;
+		top: 500px;
+		border: none;
+		background-color: white;
+		cursor: pointer;
+		border-radius: 50%;
+		box-shadow: rgb(0 0 0 / 12%) 0rem 0.3125rem 0.625rem 0rem;
+		position: fixed;
+
+		img {
+			width: 30px;
+			padding: 8px;
+			opacity: 0.8;
+		}
+	}
+
+	.line_div {
+		border: 1px solid black;
+		margin: 15px 0px;
+		
+	}
+
+	.buttons_div {
+		display: flex;
+		margin: 20px 0px;
+
+	}
+	
+	.div_but_tramsparent{
+		display: flex;
+		justify-content: space-between;
+		padding-right: 10px;
+		margin: 20px 0px;
+
+		.but_tramsparent {
+			width: 48%;
+			padding: 15px 10px;
+			border-radius: 8px;
+			border: none;
+		}
+	}
+
+	
+}
+
+

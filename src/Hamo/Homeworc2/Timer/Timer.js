@@ -1,4 +1,4 @@
-import './Timer.css'
+import './Timer.scss'
 import { useState } from 'react'
 
 let tim1 = "0";

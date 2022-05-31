@@ -1,6 +1,6 @@
 import CalcButto from "./CalcButto/CalcButto";
 import NumInput from "./NumInput/NumInput";
-import './Result.css'
+import './Result.scss'
 import { useState } from "react"
 
 const FooButton = ["+", "-", "/", "*"];
