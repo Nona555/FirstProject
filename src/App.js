@@ -7,12 +7,13 @@ import './App.scss';
 // import ToDo from './ToDoList/ToDo';
 import Footer from './Footer/Footer'
 import styles from './App.scss';
+import Header from './Header/Header';
 
 function App() {
   return (
     <div>
-      <Footer />
-        {/* App */}
+        <Header />
+        <Footer />
     </div>
   );
 }
