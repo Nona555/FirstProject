@@ -11,6 +11,7 @@ import HamoApp from './Hamo/HamoApp';
 import SignUp from './Hamo/SignUp/SignUp';
 import SidebarRight from './Hamo/Homeworc2/SidebarRight/SidebarRight';
 import Profile from './Profile/Profile';
+import Header from './Header/Header';
 
 function App() {
   const location = window.document.location.pathname;
@@ -19,9 +20,11 @@ function App() {
       {/* <HamoApp /> */}
       {location === '/SignUp' && <SignUp />}
       {location === '/Profile' && <Profile />}
-      {/* <SidebarRight /> */}
+      <SidebarRight />
       {/* <Footer /> */}
         {/* App */}
+        <Header />
+        {/* <Footer /> */}
     </div>
   );
 }

@@ -37,12 +37,12 @@ function SidebarRight() {
 						{ButtomColor.map((item , index) => <SidebarButton key={index} backgroundColor={item} />)}
 					</div>
 					<div>
-							<h3>Sidenav Type</h3>
-							<p>Choose between 2 different sidenav types.</p>
+						<h3>Sidenav Type</h3>
+						<p>Choose between 2 different sidenav types.</p>
 					</div>
 					<div className='div_but_tramsparent'>
-						<button className='but_tramsparent' onClick={ clickcolor } >TRANSPARENT</button>
-						<button className='but_tramsparent' onClick={ clickcolor } >WHITE</button>
+						<button className={`but_tramsparent, ${col === 'transparent' && 'active'} `} onClick={() => setcol("transparent") } >TRANSPARENT</button>
+						<button className={`but_tramsparent, ${col === 'white' && 'active'} `} onClick={() => setcol("white") }>WHITE</button>
 					</div>
 					<div className='inRadio'>
 						<h3>Navbar Fixed</h3>
