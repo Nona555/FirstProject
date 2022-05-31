@@ -1,3 +1,4 @@
+import './App.scss';
 // import Timer from './Timer/Timer';
 // import Functional from './Functional/Functional';
 // import Button from './Button/Button';

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './ColorfullDiv.css';
+import './ColorfullDiv.scss';
 import CustomButton from './CustomButton/CustomButton';
 
 const colorsArr = ['green', 'red', 'yellow'];

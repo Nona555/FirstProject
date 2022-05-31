@@ -1,4 +1,4 @@
-import './CalcButto.css'
+import './CalcButto.scss'
 
 function CalcButto(props) {
 	return (

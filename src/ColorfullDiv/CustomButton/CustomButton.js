@@ -1,4 +1,4 @@
-import "./CustomButton.css";
+import "./CustomButton.scss";
 const CustomButton = ({ color, poxos }) => {
     return (
         <button
