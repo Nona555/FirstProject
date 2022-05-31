@@ -1,6 +1,6 @@
 import Button from './Button/Button'
 import { useState } from "react"
-import './Calculator.css';
+import './Calculator.scss';
 import React from 'react';
 
 

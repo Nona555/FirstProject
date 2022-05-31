@@ -14,10 +14,10 @@ function SignUp() {
 				<div className='headerUp'>
 					<a href='#'>Soft UI Dashboard</a>
 					<div className='navBar'>
-						<a href='#'> <img src={allocation}></img> <span>Dashboard</span></a>
-						<a href='#'> <img src={user}></img> <span>Profile</span> </a>
-						<a href='#'> <img src={user1}></img> <span>Sign</span> Up</a>
-						<a href='#'> <img src={key}></img> <span>Sign In</span></a>
+						<a href='/Dashboard'> <img src={allocation}></img> <span>Dashboard</span></a>
+						<a href='/Profile'> <img src={user}></img> <span>Profile</span> </a>
+						<a href='/SignUp'> <img src={user1}></img> <span>Sign</span> Up</a>
+						<a href='/SignIn'> <img src={key}></img> <span>Sign In</span></a>
 					</div>
 					<button>Free Download</button>
 				</div>
