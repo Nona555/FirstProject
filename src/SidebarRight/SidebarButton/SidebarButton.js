@@ -2,7 +2,7 @@ import './SidebarButton.scss'
 
 function SidebarButton(props) {
 	return (
-		<button className='buttons_col' style={{backgroundColor:props.backgroundColor}} ></button>
+		<button className='buttons_col' style={{background:props.background}} ></button>
 	)
 }
 

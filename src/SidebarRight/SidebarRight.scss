@@ -4,13 +4,14 @@
 	.info {
 		position: absolute;
 		right: 0%;
-		transition: all 0.3s ease 0s;
-		height: 600px;
-		border: 1px solid black;
+		min-width: 350px;
+		height: 100vh;
+		transition: 250ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
 		z-index: 9;
-		background-color: rgba(255, 255, 255, 0.8);
 		position: fixed;
-
+		background-color: rgba(255, 255, 255, 0.8);
+    	backdrop-filter: saturate(200%) blur(1.875rem);
+		box-shadow: rgb(20 20 20 / 15%) 0rem 0.5rem 1.625rem -0.25rem, rgb(20 20 20 / 6%) 0rem 0.5rem 0.5625rem -0.3125rem;
 
 		.pad {
 			padding: 20px;
@@ -20,8 +21,20 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: baseline;
+		}
 
-			
+		.row {
+			display: block;
+			width: 100%;
+			border-top: 0px solid rgba(0, 0, 0, 0.12);
+			border-right: 0px solid rgba(0, 0, 0, 0.12);
+			border-left: 0px solid rgba(0, 0, 0, 0.12);
+			background-color: transparent;
+			height: 0.0625rem;
+			margin: 1rem 0px;
+			border-bottom: none;
+			opacity: 0.25;
+			background-image: linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.5), rgba(52, 71, 103, 0)) !important;
 		}
 		
 		.close{
@@ -38,8 +51,11 @@
 
 	.butt_setting {
 		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		right: 5%;
-		top: 500px;
+		top: 600px;
 		border: none;
 		background-color: white;
 		cursor: pointer;
@@ -49,15 +65,10 @@
 
 		img {
 			width: 30px;
-			padding: 8px;
+			height: 30px;
+			padding: 20px;
 			opacity: 0.8;
 		}
-	}
-
-	.line_div {
-		border: 1px solid black;
-		margin: 15px 0px;
-		
 	}
 
 	.buttons_div {
