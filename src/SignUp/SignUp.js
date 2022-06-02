@@ -1,11 +1,12 @@
 import './SignUp.scss';
-import allocation from '../assa/HeadrPot/allocation.png'
-import user from '../assa/HeadrPot/user.png'
-import user1 from '../assa/HeadrPot/user_(1).png'
-import key from '../assa/HeadrPot/key.png'
-import fac from '../assa/MainPot/facebook-logo-png-4.png'
-import apple from '../assa/MainPot/i.webp'
-import google from '../assa/MainPot/google-log.webp'
+import allocation from '../assets/HeadrPot/allocation.png'
+import user from '../assets/HeadrPot/user.png'
+import user1 from '../assets/HeadrPot/user_(1).png'
+import key from '../assets/HeadrPot/key.png'
+import fac from '../assets/MainPot/facebook-logo-png-4.png'
+import apple from '../assets/MainPot/i.webp'
+import google from '../assets/MainPot/google-log.webp'
+import Footer from '../Footer/Footer';
 
 function SignUp() {
 	return (
@@ -49,8 +50,10 @@ function SignUp() {
 					<span>Already have an account?</span>
 					<a href='#'>Sign in</a>
 				</div>
+				</div>
+			<div>
+			{/* <Footer /> */}
 			</div>
-
 		</div>
 	)
 	

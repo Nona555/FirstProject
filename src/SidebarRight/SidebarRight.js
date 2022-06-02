@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import './SidebarRight.scss'
-import sett from'../../assa/SidebarRoghet/unnamed.jpg'
+import sett from'../assets/SidebarRoghet/unnamed.jpg'
 import SidebarButton from './SidebarButton/SidebarButton'
+import SwitcherButtom from './SwitcherButtom/SwitcherButtom'
+
 
 function SidebarRight() {
 	const ButtomColor = ['rgb(255, 0, 128)', 'rgb(58, 65, 111)', 'rgb(33, 212, 253)', 'rgb(152, 236, 45)', 'rgb(251, 207, 51)', 'rgb(255, 102, 124)' ]
 	const [ wit , setwit ] = useState("0px")
-	const [ col , setcol ] = useState("")
+	const [ col , setcol ] = useState("active")
 	const click = (e) => {
 		if (e.target.className === 'setting') {
 			setwit('350px') 
@@ -16,10 +18,7 @@ function SidebarRight() {
 		}
 	}
 
-	const clickcolor = (e) => {
-
-	}
-
+	
 	return (
 		<div className='SideRight'>
 			<div className='info' style={{width:wit}} >
@@ -41,11 +40,16 @@ function SidebarRight() {
 						<p>Choose between 2 different sidenav types.</p>
 					</div>
 					<div className='div_but_tramsparent'>
-						<button className={`but_tramsparent, ${col === 'transparent' && 'active'} `} onClick={() => setcol("transparent") } >TRANSPARENT</button>
-						<button className={`but_tramsparent, ${col === 'white' && 'active'} `} onClick={() => setcol("white") }>WHITE</button>
+						<button className={`but_tramsparent ${col} ${col === 'transparent' && 'active'} `} onClick={() => setcol("transparent") } >TRANSPARENT</button>
+						<button className={`but_tramsparent ${col === 'white' && 'active'} `} onClick={() => setcol("white") }>WHITE</button>
 					</div>
 					<div className='inRadio'>
 						<h3>Navbar Fixed</h3>
+						<SwitcherButtom />
+					</div>
+					<div>
+						<button className='frii_download' >FREE DOWNLOAD</button>
+						<button className='vlew_documentation'>VLEW DOCUMENTATION</button>
 					</div>
 
 				</div>
