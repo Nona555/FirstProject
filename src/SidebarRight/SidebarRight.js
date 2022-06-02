@@ -2,23 +2,26 @@ import { useState } from 'react'
 import './SidebarRight.scss'
 import sett from'../assets/SidebarRoghet/unnamed.jpg'
 import SidebarButton from './SidebarButton/SidebarButton'
-import SwitcherButtom from './SwitcherButtom/SwitcherButtom'
-
+import CustomSwitcher from '../Custom/CustomSwitcher/CustomSwitcher'
 
 function SidebarRight() {
-	const ButtomColor = ['rgb(255, 0, 128)', 'rgb(58, 65, 111)', 'rgb(33, 212, 253)', 'rgb(152, 236, 45)', 'rgb(251, 207, 51)', 'rgb(255, 102, 124)' ]
+	const ButtomColor = [
+		'linear-gradient(310deg, rgb(121, 40, 202), rgb(255, 0, 128))',
+		'linear-gradient(310deg, rgb(20, 23, 39), rgb(58, 65, 111))',
+		'linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253))',
+		'linear-gradient(310deg, rgb(23, 173, 55), rgb(152, 236, 45))',
+		'linear-gradient(310deg, rgb(245, 57, 57), rgb(251, 207, 51))',
+		'linear-gradient(310deg, rgb(234, 6, 6), rgb(255, 102, 124))' ]
 	const [ wit , setwit ] = useState("0px")
 	const [ col , setcol ] = useState("active")
 	const click = (e) => {
 		if (e.target.className === 'setting') {
 			setwit('350px') 
-			console.log(5);
 		}else if (e.target.className === 'close') {
 			setwit('0px')
 		}
 	}
 
-	
 	return (
 		<div className='SideRight'>
 			<div className='info' style={{width:wit}} >
@@ -30,10 +33,11 @@ function SidebarRight() {
 						</div>
 						<button className='close' onClick={click}>X</button>
 					</div>
-					<div className='line_div'></div>
+					<hr className='row'></hr>
+
 					<h3>Sidenav Colors</h3>
 					<div className='buttons_div'>
-						{ButtomColor.map((item , index) => <SidebarButton key={index} backgroundColor={item} />)}
+						{ButtomColor.map((item , index) => <SidebarButton key={index} background={item} />)}
 					</div>
 					<div>
 						<h3>Sidenav Type</h3>
@@ -45,16 +49,17 @@ function SidebarRight() {
 					</div>
 					<div className='inRadio'>
 						<h3>Navbar Fixed</h3>
-						<SwitcherButtom />
 					</div>
 					<div>
 						<button className='frii_download' >FREE DOWNLOAD</button>
 						<button className='vlew_documentation'>VLEW DOCUMENTATION</button>
 					</div>
-
+					<CustomSwitcher />
 				</div>
 			</div>
-			<button className='setting butt_setting'onClick={click}><img src={sett} className='setting' onClick={click}></img> </button>
+			<button className='butt_setting'onClick={click}>
+				<img src={sett} className='setting' alt='setting'/>
+			</button>
 		</div>
 		
 	)
