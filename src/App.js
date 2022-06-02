@@ -7,9 +7,9 @@ import './App.scss';
 // import ToDo from './ToDoList/ToDo';
 import Footer from './Footer/Footer'
 import styles from './App.scss';
-import HamoApp from './Hamo/HamoApp';
-import SignUp from './Hamo/SignUp/SignUp';
-import SidebarRight from './Hamo/Homeworc2/SidebarRight/SidebarRight';
+// import HamoApp from './Hamo/HamoApp';
+import SignUp from './SignUp/SignUp';
+import SidebarRight from './SidebarRight/SidebarRight';
 import Profile from './Profile/Profile';
 import Header from './Header/Header';
 
@@ -18,12 +18,13 @@ function App() {
   return (
     <div className='app'>
       {/* <HamoApp /> */}
-      {location === '/SignUp' && <SignUp />}
-      {location === '/Profile' && <Profile />}
+      {/* {location === '/SignUp' && <SignUp />} */}
+      {/* {location === '/Profile' && <Profile />} */}
       <SidebarRight />
+	  {/* <SignUp /> */}
       {/* <Footer /> */}
         {/* App */}
-        <Header />
+        {/* <Header /> */}
         {/* <Footer /> */}
     </div>
   );

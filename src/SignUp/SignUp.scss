@@ -13,7 +13,7 @@
 		min-height: 50vh;
 		opacity: 1;
 		color: rgb(52, 71, 103);
-		background: linear-gradient(310deg, rgba(20, 23, 39, 0.6), rgba(58, 65, 111, 0.6)), url(../assa/MainPot/blueBackground.jpg) transparent;
+		background: linear-gradient(310deg, rgba(20, 23, 39, 0.6), rgba(58, 65, 111, 0.6)), url(../assets/MainPot/blueBackground.jpg) transparent;
 		border-radius: 0.75rem;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -101,6 +101,7 @@
 
 	h4 {
 		color: rgb(52, 71, 103);
+		margin: 30px 0px;
 	}
 
 	.icon {
