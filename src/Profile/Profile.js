@@ -1,10 +1,9 @@
-import logo from '../assets/icons/header/facebook.svg'
+import "./Profile.sass";
 
 function Profile() {
     return (
-        <div>
-            Profile Componenet
-            <img src={logo}/>
+        <div className="ProfileComponent">
+
         </div>
     )
 }
