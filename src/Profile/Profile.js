@@ -1,9 +1,12 @@
-import "./Profile.sass";
+import LeftSidebar from "../Gor/LeftSidebar/LeftSidebar";
+import "./Profile.sass"
 
 function Profile() {
     return (
-        <div className="ProfileComponent">
+        <div className="Profile">
+            <div className="ProfileTitle">
 
+            </div>
         </div>
     )
 }
