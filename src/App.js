@@ -11,8 +11,6 @@ import Dashboard from './Dashboard/Dashboard';
 
 function App() {
   const [ location, setLocation ] = useState('/Dashboard');
-  // const [ count, setCount ] = useState(0);
-  // const [ age, setAge ] = useState(0);
   const [ data, setData ] = useState();
   useEffect(() => {
     setLocation(window.document.location.pathname);
@@ -21,7 +19,6 @@ function App() {
     .then(result => setData(result))
     .catch(err => console.log(err))
   }, [location])
-  console.log(location);
   return (
     <div className='app'>
       {location === '/SignUp' && <SignUp />}

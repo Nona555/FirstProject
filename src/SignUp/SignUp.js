@@ -1,27 +1,15 @@
 import './SignUp.scss';
-import allocation from '../assets/HeadrPot/allocation.png'
-import user from '../assets/HeadrPot/user.png'
-import user1 from '../assets/HeadrPot/user_(1).png'
-import key from '../assets/HeadrPot/key.png'
 import fac from '../assets/MainPot/facebook-logo-png-4.png'
 import apple from '../assets/MainPot/i.webp'
 import google from '../assets/MainPot/google-log.webp'
-import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import CustomCheckbox from '../Custom/CustomCheckbox/CustomCheckbox';
 
 function SignUp() {
 	return (
 		<div className='containerUp'>
 			<div className='bacImg'>
-				<div className='headerUp'>
-					<a href='#'>Soft UI Dashboard</a>
-					<div className='navBar'>
-						<a href='/Dashboard'> <img src={allocation}></img> <span>Dashboard</span></a>
-						<a href='/Profile'> <img src={user}></img> <span>Profile</span> </a>
-						<a href='/SignUp'> <img src={user1}></img> <span>Sign</span> Up</a>
-						<a href='/SignIn'> <img src={key}></img> <span>Sign In</span></a>
-					</div>
-					<button>Free Download</button>
-				</div>
+				<Header bgColor={'none'} color={'white'} icon={'white'} buttonBg={true}/>
 				<div className='text'>
 					<h1>Welcome</h1>
 					<p>Use these awesome forms to login or create new account in your project for free.</p>
@@ -36,14 +24,14 @@ function SignUp() {
 				</div>
 				<p>or</p>
 				<form>
-					<input type='text' placeholder='Name'></input>
-					<input type='email' placeholder='Email'></input>
-					<input type='password' placeholder='Password'></input>
-					<label>
-					<input type='checkbox'></input>
-					<span>I agree the</span>
-					<a href='#'>Terms and Conditions</a>
-					</label>
+					<input className='inp' type='text' placeholder='Name'></input>
+					<input className='inp' type='email' placeholder='Email'></input>
+					<input className='inp' type='password' placeholder='Password'></input>
+					{/* <input type='checkbox' style={{ outline: 'none'}}></input> */}
+					<div style={{ display: 'flex', marginBottom: 10}}>
+						<CustomCheckbox label={'I agree'}/>
+						<a href='#' style={{marginLeft: 5}}>Terms and Conditions</a>
+					</div>
 					<button>SIGN UP</button>
 				</form>
 				<div className='divsignIn'>
