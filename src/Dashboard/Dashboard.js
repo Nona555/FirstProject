@@ -1,10 +1,11 @@
 import SidebarRight from "../SidebarRight/SidebarRight"
+import DashboardHeader from "./DashboardHeader"
 
 const Dashboard = () => {
     return (
         <div style={{ display: 'flex'}}>
-            Dashboard
-            <SidebarRight />
+            <DashboardHeader />
+            {/* <SidebarRight /> */}
         </div>
     )
 }
