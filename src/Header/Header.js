@@ -1,4 +1,10 @@
 import './Header.scss';
+import profile from '../assets/icons/user.png'
+import user from '../assets/icons/uss.png'
+import key from '../assets/icons/key1.png'
+import dash from '../assets/icons/dash.png'
+
+import userEvent from '@testing-library/user-event';
 
 function Header() {
     return (
@@ -11,10 +17,24 @@ function Header() {
                     <p> Soft UI Dashbord </p>
                     </div>
                     <ul className='navigation'>
-                     <a><li> Dashboard</li></a>
-                     <a><li>Profile </li></a>
-                     <a><li>Sign Up </li></a>
-                     <a><li>Sign In </li></a>
+                     <a><li>
+                     <img style={{width: 18, marginRight: 5}} src={dash}/>
+                        Dashboard
+                        </li></a>
+                     <a><li>
+                        <img style={{width: 18, marginRight: 5}} src={profile}/>
+                        Profile
+                    </li></a>
+                     <a><li>
+                       <img style={{width:18,marginRight:5}} src={user}/>
+                        Sign Up 
+                        </li></a>
+                     <a><li>
+                     <img style={{width:18,marginRight:5}} src={key}/>
+                        
+                        Sign In 
+                        
+                        </li></a>
                     </ul>
                     <button className='button'>FREE DOWNLOAD</button>
                 </div>

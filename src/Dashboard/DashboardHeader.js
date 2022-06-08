@@ -4,7 +4,7 @@ function DashboardHeader() {
     return (
         <header>
             <div className='dashLeft'>
-                <p><i classNamee="fa-solid fa-house"></i> / Dashboard</p>
+                <p><i class="fa-solid fa-house"></i> / Dashboard</p>
                 <h4>Dashboard</h4>
             </div>
             <div className='dashRight'>
