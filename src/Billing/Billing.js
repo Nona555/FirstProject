@@ -7,14 +7,16 @@ import salary from '../assets/BillingPot/salary.svg'
 import paypal from '../assets/BillingPot/paypal_logo.svg'
 import edit from '../assets/BillingPot/edit.png'
 import visa from '../assets/BillingPot/visa.webp'
+import SidebarRight from '../SidebarRight/SidebarRight'
 
 function Billing () {
 	return (
 		<div>
 			<div className='grid_container'>
-				<div className='grid_header'>Header</div>
-				<div className='grid_said'><LeftSidebar /></div>
-				<div className='grid_main'>
+				<LeftSidebar />
+				<div className={'wholeRightSide'} >
+					<div className='grid_header'>Header</div>
+					<div className='grid_main'>
 					<div>
 						<img src={waifi} />
 						<h5>4562   1122   4594   7852</h5>
@@ -78,8 +80,10 @@ function Billing () {
 					</div>
 					<div>6</div>
 					<div>7</div>
+					</div>
+					<div className='grid_footer'><Footer /></div>
 				</div>
-				<div className='grid_footer'><Footer /></div>
+				<SidebarRight />
 			</div>
 		</div>
 	)

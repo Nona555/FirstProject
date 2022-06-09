@@ -23,11 +23,11 @@ function App() {
   }, [location])
   return (
     <div className='app'>
-      {/* {location === '/SignUp' && <SignUp />}
+      {location === '/SignUp' && <SignUp />}
       {location === '/Profile' && <Profile />}
-      {(location === '/Dashboard' || location === "/") && <Dashboard />} */}
-      {/* {data && data.map(item => <div key={item.id}>{item.login}</div>)} */}
-	  <Billing />
+      {(location === '/Dashboard' || location === "/") && <Dashboard />}
+      {location === '/billing' && <Billing />}
+      {data && data.map(item => <div key={item.id}>{item.login}</div>)}
     </div>
   );
 }
