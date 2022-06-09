@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './CustomSwitcher.scss'
 
 function CustomSwitcher() {
-    const [ checked, setChecked ] = useState(false);
+    const [ checked, setChecked ] = useState(true);
     const checkHandler = () => {
         setChecked(prev => !prev)
     }
