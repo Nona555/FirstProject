@@ -38,7 +38,6 @@ function SidebarRight() {
 						<button className='close' onClick={click}>X</button>
 					</div>
 					<hr className='row'></hr>
-
 					<h3>Sidenav Colors</h3>
 					<div className='buttons_div'>
 						{ButtomColor.map((item , index) => <SidebarButton key={index} background={item} />)}
