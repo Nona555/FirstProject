@@ -9,6 +9,7 @@ import Header from './Header/Header';
 import { useEffect, useState } from 'react';
 import Dashboard from './Dashboard/Dashboard';
 import LeftSidebar from './Gor/LeftSidebar/LeftSidebar';
+import Billing from './Billing/Billing';
 
 function App() {
   const [ location, setLocation ] = useState('/Dashboard');
@@ -22,10 +23,11 @@ function App() {
   }, [location])
   return (
     <div className='app'>
-      {location === '/SignUp' && <SignUp />}
+      {/* {location === '/SignUp' && <SignUp />}
       {location === '/Profile' && <Profile />}
-      {(location === '/Dashboard' || location === "/") && <Dashboard />}
+      {(location === '/Dashboard' || location === "/") && <Dashboard />} */}
       {/* {data && data.map(item => <div key={item.id}>{item.login}</div>)} */}
+	  <Billing />
     </div>
   );
 }
