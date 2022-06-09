@@ -23,7 +23,7 @@ function LeftSidebar () {
             <hr />
             <ul>
                 <li>
-                    <a href='#' className='links'>
+                    <a href='/Dashboard' className='links'>
                         <div>
                             <img src={shop} />
                         </div>
