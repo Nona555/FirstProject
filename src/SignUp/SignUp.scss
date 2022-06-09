@@ -1,0 +1,204 @@
+.containerUp {
+	
+	padding: 13px;
+	position: relative;
+	
+	
+
+
+	.bacImg {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 50vh;
+		opacity: 1;
+		color: rgb(52, 71, 103);
+		background: linear-gradient(310deg, rgba(20, 23, 39, 0.6), rgba(58, 65, 111, 0.6)), url(../assets/MainPot/blueBackground.jpg) transparent;
+		border-radius: 0.75rem;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.headerUp {
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+		
+			a {
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+				color: white;
+				
+				img {
+					width: 15px;
+					
+				}
+			}
+
+			.navBar {
+				width: 40%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				
+			
+				span{
+					margin-left: 5px;
+				}
+			
+			}
+
+			button {
+				
+				transition: all 150ms ease-in 0s;
+				box-shadow: rgb(0 0 0 / 11%) 0rem 0.25rem 0.4375rem -0.0625rem,
+							rgb(0 0 0 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+				color: rgb(255, 255, 255);
+				background-image: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+				padding: 0.5rem 2rem;
+				font-size: 0.75rem;
+				border-radius: 20px;
+				border: none;
+				cursor: pointer;
+
+				&:hover {
+					transform: scale(1.05)
+				}
+
+			}
+
+			
+		}
+
+		h1, p{
+			color: white;
+		}
+
+		.text {
+			width: 30%;
+			text-align: center;
+			margin-top: 50px;
+			padding: 0 30px;
+		}
+	}
+	
+}
+
+.mainUp{
+	position: absolute;
+	transform: translate(-50%);
+	left: 50%;
+	top: 70%;
+	width: 30%;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+
+	h4 {
+		color: rgb(52, 71, 103);
+		margin: 30px 0px;
+	}
+
+	.icon {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+
+		button {
+			width: 70px;
+			height: 70px;
+			background-color: white;
+			border: 1px solid rgb(233, 236, 239);
+			transition: all 150ms ease-in 0s;
+
+				img{
+					width: 30px;
+					height: 30px;
+				}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		
+		}
+
+			
+		}
+		
+	form {
+		
+		padding: 16px 24px 24px;
+		label{
+			
+			display: flex;
+			input{
+				width: 20px;
+				height: 20px;
+			}
+			span {
+				margin: 0px 10px;
+			}
+
+			a {
+				text-decoration: none;
+			}
+			
+		}
+	
+		input {
+			width: 100%;
+			display: block;
+			padding: 8px 12px;
+			border-radius: 10px;
+			margin-bottom: 15px;
+			border: none;
+			border: 0.0625rem solid rgb(133, 133, 133);
+			font: inherit;
+			
+			
+			&:focus  {
+				outline: none;
+				border: 3px solid rgb(33, 212, 253);
+			}
+			
+		}
+
+		button {
+			width: 110%;
+			padding: 10px 15px;
+			border-radius: 8px;
+			transition: all 150ms ease-in 0s;
+			color: white;
+			background : linear-gradient(310deg, rgb(20, 23, 39), rgb(58, 65, 111));
+			box-shadow : rgb(0 0 0 / 11%) 0rem 0.25rem 0.4375rem -0.0625rem, rgb(0 0 0 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+			cursor: pointer;
+
+			&:hover {
+					
+				transform: scale(1.05)
+			}
+		}
+	}
+
+	.divsignIn {
+		span {
+			margin-right: 10px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+}
+
+
+
+
+
+

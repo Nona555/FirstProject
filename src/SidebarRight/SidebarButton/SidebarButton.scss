@@ -1,0 +1,14 @@
+
+.buttons_col {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin-right: 10px;
+	border: none;
+
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
+

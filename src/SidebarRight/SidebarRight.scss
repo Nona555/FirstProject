@@ -1,0 +1,259 @@
+.SideRight{
+	position: relative;
+	
+
+	.info {
+		position: absolute;
+		width: 350px;
+		right: 0%;
+		height: 100vh;
+		transition: 250ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+		z-index: 9;
+		position: fixed;
+		background-color: rgba(255, 255, 255, 0.8);
+		backdrop-filter: saturate(200%) blur(1.875rem);
+		box-shadow: rgb(20 20 20 / 15%) 0rem 0.5rem 1.625rem -0.25rem, rgb(20 20 20 / 6%) 0rem 0.5rem 0.5625rem -0.3125rem;
+
+		.pad {
+			padding: 20px;
+		}
+
+		.button_close {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+
+		.row {
+			display: block;
+			width: 100%;
+			border-top: 0px solid rgba(0, 0, 0, 0.12);
+			border-right: 0px solid rgba(0, 0, 0, 0.12);
+			border-left: 0px solid rgba(0, 0, 0, 0.12);
+			background-color: transparent;
+			height: 0.0625rem;
+			margin: 1rem 0px;
+			border-bottom: none;
+			opacity: 0.25;
+			background-image: linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.5), rgba(52, 71, 103, 0)) !important;
+		}
+		
+		.close{
+			top: 60px;
+			border: none;
+			position: inherit;
+			
+		}
+
+		h3 , p {
+			margin: 0;
+		}
+
+		.buttom_frii {
+			margin-top: 60px;
+			margin-bottom: 16px;
+			display: flex;
+			flex-direction: column;
+
+			.frii_download, .vlew_documentation{
+				box-sizing: border-box;
+				border: none;
+				cursor: pointer;
+				text-decoration: none;
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				letter-spacing: 0.02857em;
+				width: 97%;
+				font-size: 0.75rem;
+				font-weight: 700;
+				border-radius: 0.5rem;
+				line-height: 1.4;
+				text-align: center;
+				text-transform: uppercase;
+				transition: all 150ms ease-in 0s;
+				box-shadow: rgb(0 0 0 / 11%) 0rem 0.25rem 0.4375rem -0.0625rem, rgb(0 0 0 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+				padding: 0.75rem 1.5rem;
+				background-image: linear-gradient(310deg, rgb(20, 23, 39), rgb(58, 65, 111));
+				color: rgb(255, 255, 255);
+				margin-bottom: 15px;
+
+				&:hover {
+					transform: scale(1.03);
+				}
+			}
+
+			.vlew_documentation {
+				background-image: linear-gradient(310deg, rgb(250, 250, 250), rgb(250, 250, 250));
+				color: rgb(52, 71, 103);
+				border: 1px solid rgb(52, 71, 103);
+			}
+		}
+
+		.star {
+			display: flex;
+			justify-content: center;
+			
+			
+			
+			img {
+				width: 15px;
+				margin-right: 3px;
+
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				height: 16px;
+				padding: 5px 10px;
+				font-size: 12px;
+				line-height: 16px;
+				color: #24292f;
+				background-color: #fff;
+				font-weight: 600;
+				cursor: pointer;
+				border: 1px solid;
+				// border-color: rgba(27,31,36,.15);
+				border-color: #ccd1d5;
+				border-radius: 3px;
+
+				&:hover {
+					color: blue;
+				}
+				
+			}
+
+			.starimg {
+				background-color: #ebf0f4;
+
+				&:hover {
+					color:#24292f;
+					background-color: rgba(192, 192, 192, 0.308);
+				}
+			}
+		}
+
+		h6{
+			text-align: center;
+			margin-top: 40px;
+			font-size: 1rem;
+			line-height: 1.625;
+			font-family: Roboto, Helvetica, Arial, sans-serif;
+			font-weight: 500;
+			letter-spacing: 0.0075em;
+			opacity: 1;
+			text-transform: none;
+			vertical-align: unset;
+			text-decoration: none;
+			color: rgb(52, 71, 103);
+		}
+
+		.buttom_twit_fb{
+			display: flex;
+			justify-content: center;
+			opacity: 1;
+			background: transparent;
+			color: rgb(52, 71, 103);
+
+			button {
+				border: 0px;
+				cursor: pointer;
+				text-decoration: none;
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				letter-spacing: 0.02857em;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 0.75rem;
+				font-weight: 700;
+				border-radius: 0.5rem;
+				line-height: 1.4;
+				transition: all 150ms ease-in 0s;
+				box-shadow: rgb(0 0 0 / 11%) 0rem 0.25rem 0.4375rem -0.0625rem, rgb(0 0 0 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+				padding: 0.75rem 1.5rem;
+				background-color: rgb(52, 71, 103);
+				color: rgb(255, 255, 255);
+
+				
+				&:hover {
+					transform: scale(1.03);
+				}
+
+				img {
+					width: 15px;
+					margin-right: 10px;
+				}
+			}
+
+			.buttom_twit {
+				margin-right: 10px;
+			}
+
+			
+		}
+	}
+
+	.butt_setting {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		right: 5%;
+		top: 600px;
+		border: none;
+		background-color: white;
+		cursor: pointer;
+		border-radius: 50%;
+		box-shadow: rgb(0 0 0 / 12%) 0rem 0.3125rem 0.625rem 0rem;
+		position: fixed;
+
+		img {
+			width: 30px;
+			height: 30px;
+			padding: 20px;
+			opacity: 0.8;
+		}
+	}
+
+	.buttons_div {
+		display: flex;
+		margin: 20px 0px;
+
+	}
+	
+	.div_but_tramsparent{
+		display: flex;
+		justify-content: space-between;
+		padding-right: 10px;
+		margin: 20px 0px;
+
+		.but_tramsparent {
+			width: 48%;
+			letter-spacing: 0.02857em;
+			padding: 0.75rem 1.5rem;
+			font-size: 0.75rem;
+			font-weight: 700;
+			border-radius: 0.5rem;
+			border: none;
+			transition: all 150ms ease-in 0s;
+			border: 1px solid rgb(23, 193, 232);
+			color: rgb(23, 193, 232);
+			box-shadow: rgb(0 0 0 / 11%) 0rem 0.25rem 0.4375rem -0.0625rem, rgb(0 0 0 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+			background-color: transparent;
+
+			&:hover {
+				transform: scale(1.05)
+			}
+		}
+
+		.active {
+			background-image: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+			color: white;
+			
+		}
+	}
+
+	
+}
+
+
+
