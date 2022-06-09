@@ -1,61 +1,287 @@
 
 .grid_header , .grid_said , .grid_main , .grid_footer {
 	border: 1px solid;
-	// padding: 10px;
 }
 
 .grid_container{
 	display: grid;
-	grid-template-columns: 1fr  3fr;
-	grid-template-rows: 1fr  1 fr ;
+	grid-template-columns: 300px  3fr;
+	grid-template-rows: auto auto auto  ;
+	grid-gap: 20px;
 
 
 	.grid_header {
-		grid-column: 1 / 4;
+		grid-column: 2 / 3;
+		
 	}
 
 	.grid_said{
-		grid-column: 1 / 1;
+		grid-row: 1 / 3;
 	}
 
 	.grid_main {
-		grid-column: 2 / 2;
+		grid-column: 2 / 3;
 		display: grid;
 		grid-template-columns: repeat(6 , 1fr);
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-gap: 20px;
 
 
-		div {
+		&>div {
 			border: 1px solid red;
 		}
 
-		& div:nth-child(1) {
+		& > div:nth-child(1) {
 			grid-column: 1 / 3;
+			padding: 16px;
+			opacity: 1;
+			background: transparent;
+			color: rgb(52, 71, 103);
+			color: rgba(0, 0, 0, 0.87);
+			transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+			border: 0px solid rgba(0, 0, 0, 0.125);
+			border-radius: 1rem;
+			background: linear-gradient(310deg, rgba(20, 23, 39, 0.8), rgba(58, 65, 111, 0.8)), url(../assets/MainPot/blueBackground.jpg);
+			box-shadow: rgb(20 20 20 / 25%) 0rem 1.4375rem 2.8125rem -0.6875rem;
+
+			img {
+				width: 20px;
+				padding: 10px;
+			}
+
+			h5 {
+				margin: 24px 0px 40px;
+				font-size: 1.25rem;
+				line-height: 1.375;
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				letter-spacing: 0em;
+				opacity: 1;
+				text-transform: none;
+				vertical-align: unset;
+				text-decoration: none;
+				color: rgb(255, 255, 255);
+				font-weight: 500;
+				padding-bottom: 8px;
+			}
+
+			.card{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				img {
+					width: 50px;
+				}
+			}
+			
+			.card_info{
+				display: flex;	
+				// justify-content: space-between;
+				// align-items: center;
+
+				h6{
+					font-size: 1rem;
+					line-height: 1.625;
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					letter-spacing: 0.0075em;
+					opacity: 1;
+					color: rgb(255, 255, 255);
+					font-weight: 500;
+					margin-right: 20px;
+				}
+
+				p{
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					font-size: 0.875rem;
+					line-height: 1.5;
+					letter-spacing: 0.02857em;
+					opacity: 0.8;
+					color: rgb(255, 255, 255);
+					font-weight: 400;
+				}
+				
+
+				
+			}
+		
 		}
 
-		& div:nth-child(2) {
+		.salary,.paypal {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: rgba(0, 0, 0, 0.87);
+			transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+			overflow: hidden;
+			background-color: rgb(255, 255, 255);
+			background-clip: border-box;
+			border: 0px solid rgba(0, 0, 0, 0.125);
+			border-radius: 1rem;
+			box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+
+			.row {
+				display: block;
+				width: 100%;
+				border-top: 0px solid rgba(0, 0, 0, 0.12);
+				border-right: 0px solid rgba(0, 0, 0, 0.12);
+				border-left: 0px solid rgba(0, 0, 0, 0.12);
+				background-color: transparent;
+				height: 0.0625rem;
+				margin: 1rem 0px;
+				border-bottom: none;
+				opacity: 0.25;
+				background-image: linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.5), rgba(52, 71, 103, 0)) !important;
+			}
+			
+
+			.img_salary{
+				width: 4rem;
+				height: 4rem;
+				opacity: 1;
+				margin: 10px 0px;
+				background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+				color: rgb(255, 255, 255);
+				border-radius: 0.75rem;
+				box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem, rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.062
+				
+			}
+
+			p{
+				margin: 5px 0px;
+			}
+
+			h6{
+				font-size: 1rem;
+				line-height: 1.625;
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				letter-spacing: 0.0075em;
+				opacity: 1;
+				color: rgb(52, 71, 103);
+				font-weight: 600;
+			}
+
+			h5 {
+				font-size: 1.25rem;
+				line-height: 1.375;
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				letter-spacing: 0em;
+				opacity: 1;
+				color: rgb(52, 71, 103);
+				font-weight: 600;
+			}
+
+			
+
+			.salary_info{
+				text-align: center;
+			}
+
+			
+			
+		}
+
+		& > div:nth-child(3) {
+			.img_salary {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 
 		}
 
-		& div:nth-child(3) {
-
-		}
-
-		& div:nth-child(4) {
+		& > div:nth-child(4) {
 			grid-column: 5 / 7;
 			grid-row: 1/3;
 		}
 
-		& div:nth-child(5) {
+		& > div:nth-child(5) {
 			grid-column: 1 / 5;
+			padding: 20px;
+
+			.pay_method {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				button {
+					box-sizing: border-box;
+					border: 0px;
+					cursor: pointer;
+					text-decoration: none;
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					letter-spacing: 0.02857em;
+					font-size: 0.75rem;
+					font-weight: 700;
+					border-radius: 0.5rem;
+					line-height: 1.4;
+					text-align: center;
+					transition: all 150ms ease-in 0s;
+					box-shadow: rgb(0 0 0 / 11%) 0rem 0.25rem 0.4375rem -0.0625rem, rgb(0 0 0 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+					padding: 0.75rem 1.5rem;
+					background-image: linear-gradient(310deg, rgb(20, 23, 39), rgb(58, 65, 111));
+					color: rgb(255, 255, 255);
+
+					&:hover {
+						transform: scale(1.03);
+					}
+
+				}
+
+				h6 {
+					font-size: 1rem;
+					line-height: 1.625;
+					font-family: Roboto, Helvetica, Arial, sans-serif;
+					letter-spacing: 0.0075em;
+					opacity: 1;
+					color: rgb(52, 71, 103);
+					font-weight: 600;
+				}
+			}
+
+			.master_visa{
+				display: flex;
+				justify-content: space-between;
+
+				.master, .visa {
+					width: 40%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					border: 0.0625rem solid rgb(222, 226, 230);
+					padding: 24px;
+					opacity: 1;
+					background: transparent;
+					color: rgb(52, 71, 103);
+					border-radius: 0.75rem;
+					margin-top: 15px;
+					
+					h6 {
+						font-size: 1rem;
+						line-height: 1.625;
+						font-family: Roboto, Helvetica, Arial, sans-serif;
+						letter-spacing: 0.0075em;
+						opacity: 1;
+						color: rgb(52, 71, 103);
+						font-weight: 600;
+					}
+					
+				}
+				
+			}
+
+			img {
+				width: 50px;
+			}
+			.edit{
+				width: 20px;
+			}
 		}
 
-		& div:nth-child(6) {
+		& > div:nth-child(6) {
 			grid-column: 1 / 4;
 		}
 
-		& div:nth-child(7) {
+		& > div:nth-child(7) {
 			grid-column: 4 / 7;
 		}
 
@@ -63,7 +289,7 @@
 	}
 
 	.grid_footer {
-		grid-column: 1 / 4;
+		grid-column: 1 / 3;
 	}
 
 }
