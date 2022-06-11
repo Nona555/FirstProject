@@ -12,6 +12,7 @@ import { monthtData } from './FakeDate/FakeDate'
 import { cardData } from './FakeDate/FakeDate'
 import pdf from '../assets/BillingPot/pdf.jpg'
 import bucket from '../assets/BillingPot/bucket.svg'
+import Transaction from './components/Transactions/Transactions'
 
 function Billing () {
 	return (
@@ -127,7 +128,7 @@ function Billing () {
 							</div>
 							) }
 					</div>
-					<div>7</div>
+					<Transaction />
 					</div>
 					<div className='grid_footer'><Footer /></div>
 				</div>
