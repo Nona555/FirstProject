@@ -1,6 +1,6 @@
 import LeftSidebar from "../Gor/LeftSidebar/LeftSidebar"
 import DashboardHeader from "./DashboardHeader"
-// import DashboardMain from "./DashBoardMain"
+import DashboardMain from "./DashBoardMain"
 
 const Dashboard = () => {
     return (
@@ -8,7 +8,7 @@ const Dashboard = () => {
             <LeftSidebar />
             <div style={{ display: 'flex',flexDirection: 'column',width: '78%',overflow:'auto'}}>
                 <DashboardHeader />
-                {/* <DashboardMain /> */}
+                <DashboardMain />
             </div>
             {/* <SidebarRight /> */}
         </div>

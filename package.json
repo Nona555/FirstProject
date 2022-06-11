@@ -7,10 +7,18 @@
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.3.1",
+<<<<<<< HEAD
     "node": "^17.7.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+=======
+    "node-sass": "^7.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.52.2",
+>>>>>>> 8c5c289fb6f9cebc1e66fa1703e2020ffbc5a732
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -36,8 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "sass": "file:sass/src/Sass:src/Css --watch --no-source-map"
   }
 }

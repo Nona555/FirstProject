@@ -13,7 +13,7 @@ function LeftSidebar () {
     return(
         <div className="LeftSidebar">
             <div className='title'>
-                <a href='#'>
+                <a href='/Dashboard'>
                     <span>                    
                         <img  src={logo} />
                         Soft UI Dashborad
@@ -23,7 +23,7 @@ function LeftSidebar () {
             <hr />
             <ul>
                 <li>
-                    <a href='#' className='links'>
+                    <a href='/Dashboard' className='links'>
                         <div>
                             <img src={shop} />
                         </div>
@@ -39,7 +39,7 @@ function LeftSidebar () {
                     </a>
                 </li>
                 <li>
-                    <a href='#' className='links'>
+                    <a href='/billing' className='links'>
                         <div>
                             <img src={bankCard} />
                         </div>
