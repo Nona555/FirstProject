@@ -8,6 +8,10 @@ import paypal from '../assets/BillingPot/paypal_logo.svg'
 import edit from '../assets/BillingPot/edit.png'
 import visa from '../assets/BillingPot/visa.webp'
 import SidebarRight from '../SidebarRight/SidebarRight'
+import { monthtData } from './FakeDate/FakeDate'
+import { cardData } from './FakeDate/FakeDate'
+import pdf from '../assets/BillingPot/pdf.jpg'
+import bucket from '../assets/BillingPot/bucket.svg'
 
 function Billing () {
 	return (
@@ -59,7 +63,29 @@ function Billing () {
 						<hr className='row'></hr>
 						<div><h5>$455.00</h5></div>
 					</div>
-					<div>4</div>
+					<div>
+						<div className='invoices_div'>
+							<h6>Invoices</h6>
+							<button className='view_button'>VIEW ALL</button>
+						</div>
+						<div>
+							{monthtData.map(item => 
+								<div className='container_month_info'>
+									<div className='month_info'>
+										<h5>{item.month}</h5>
+										<p>{item.code}</p>
+									</div>
+									<div className='money_info'>
+										<p>{item.money}</p>
+										<div style={{display: "flex" ,  alignItems: 'center' }}>
+											<img src={pdf} />
+											<span>PDF</span>
+										</div>
+									</div>
+								</div>
+							)}
+						</div>
+					</div>
 					<div>
 						<div className='pay_method'>
 							<h6>Payment Method</h6>
@@ -78,7 +104,29 @@ function Billing () {
 							</div>
 						</div>
 					</div>
-					<div>6</div>
+					<div>
+						<h6 style={{marginBottom: '50px'}}>Billing Information</h6>
+						{ cardData.map(item => 
+							<div className='user_card_info'>
+								<div className='name_info'>
+									<h6>{item.name}</h6>
+									<div className='buttom_delete_edit'>
+										<button className='buttom_delete'>
+											<img src={bucket} />DELETE
+										</button>
+										<button className='buttom_edit'>
+											<img src={edit} />EDIT
+										</button>
+									</div>
+								</div>
+								<div>
+									<div className='flex'><p>Company Name:</p><span>{item.Company}</span></div>
+									<div className='flex'><p>Email Address:</p><span>{item.Email}</span></div>
+									<div className='flex'><p>VAT Number:</p><span>FRB1235476 </span></div>
+								</div>
+							</div>
+							) }
+					</div>
 					<div>7</div>
 					</div>
 					<div className='grid_footer'><Footer /></div>
