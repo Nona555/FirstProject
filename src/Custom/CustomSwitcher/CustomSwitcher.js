@@ -6,7 +6,6 @@ function CustomSwitcher() {
     const checkHandler = () => {
         setChecked(prev => !prev)
     }
-    console.log(checked);
 	return (
         <label className="toggle-control">
             <input type="checkbox" checked={checked} onClick={() => checkHandler()} />

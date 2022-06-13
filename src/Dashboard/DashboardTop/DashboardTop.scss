@@ -1,0 +1,73 @@
+.dashboardTop {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .dashboardTopItem1 {
+        background: white;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 20px;
+        width: 550px;
+        height: 250px;
+        display: flex;
+
+        .itemOne {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            div {
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                h4 {
+                    color: rgb(103, 116, 142);
+                }
+                h3 {
+                    color: rgb(52, 71, 103);
+                }
+                p {
+                    font-size: 17px;
+                    color: rgb(103, 116, 142);
+                }
+            }
+            a{
+                color: rgb(103, 116, 142);
+                 font-weight: bold; 
+            }
+        }
+    }
+
+    .dashboardTopItem2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background: white;
+        border-radius: 20px;
+        width: 395px;
+        height: 250px;
+
+        .develop {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-left: 20px;
+            width: 90%;
+            height: 90%;
+            border-radius: 10px;
+            background-size: cover;
+            background: linear-gradient(310deg, rgba(20, 23, 39, 0.8), rgba(58, 65, 111, 0.8)),
+                url(../images/developerImg.jpg) transparent;
+            background-size: cover;
+
+            a{
+                color: white;
+            }
+        }
+    }
+}

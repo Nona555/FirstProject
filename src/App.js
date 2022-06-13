@@ -27,7 +27,7 @@ function App() {
       {location === '/Profile' && <Profile />}
       {(location === '/Dashboard' || location === "/") && <Dashboard />}
       {location === '/billing' && <Billing />}
-      {data && data.map(item => <div key={item.id}>{item.login}</div>)}
+      {/* {data && data.map(item => <div key={item.id}>{item.login}</div>)} */}
     </div>
   );
 }

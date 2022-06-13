@@ -1,16 +1,25 @@
-import LeftSidebar from "../Gor/LeftSidebar/LeftSidebar"
-import DashboardHeader from "./DashboardHeader"
-import DashboardMain from "./DashBoardMain"
-
+import DashboardHeader from "../Dashboard/DashboardHeader"
+import LeftSidebar from '../Gor/LeftSidebar/LeftSidebar'
+import './Dashboard.scss'
+import DashboardBottom from "./DashboardBottom/DashboardBottom"
+import DashboardMiddle from "./DashboardMiddle/DashboardMiddle"
+import DashboardToday from "./DashboardToday/DashboardToday"
+import { TodayDate } from './DashboardToday/TodayDate'
+import DashboardTop from "./DashboardTop/DashboardTop"
+// import SidebarRight from "../SidebarRight/SidebarRight"
 const Dashboard = () => {
     return (
-        <div style={{ display: 'flex',background: '#f8f9fa',height: '100vh'}}>
+        <div>
             <LeftSidebar />
-            <div style={{ display: 'flex',flexDirection: 'column',width: '78%',overflow:'auto'}}>
+            <main style={{ display: 'grid', gridGap: '20px' }}>
                 <DashboardHeader />
-                <DashboardMain />
-            </div>
-            {/* <SidebarRight /> */}
+                <div className="dayInfoContainer">
+                    {TodayDate.map(item => <DashboardToday todayInfo={item.todayInfo} todayCount={item.todayCount} todayIcon={item.todayIcon} />)}
+                </div>
+                <DashboardTop />
+                <DashboardMiddle />
+                <DashboardBottom />
+            </main>
         </div>
     )
 }

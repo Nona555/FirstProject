@@ -1,4 +1,4 @@
-import './Dashboard.scss'
+import '../Dashboard.scss'
 function DashboardToday(props) {
     return (
             <div className="dayInfo">

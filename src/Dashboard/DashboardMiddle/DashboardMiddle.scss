@@ -1,0 +1,28 @@
+.DashboardMiddle {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .DashboardMiddleItem2 {
+        background: white;
+        border-right-width: 20px;
+        width: 550px;
+        height: 435px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .DashboardMiddleItem1 {
+        background: white;
+        border-right-width: 20px;
+        width: 395px;
+        height: 435px;
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 90%;
+            height: 50%;
+            border: 1px solid;
+        }
+    }
+}
