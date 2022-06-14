@@ -1,7 +1,13 @@
 .containerUp {
-	
+	display: flex;
+	flex-direction: column;
 	padding: 13px;
-	position: relative;
+	
+	.ps {
+		position: relative;
+		border: 5px solid red;
+		height: 95vh;
+	}
 	
 	.bacImg {
 		display: flex;
@@ -87,13 +93,14 @@
 	position: absolute;
 	transform: translate(-50%);
 	left: 50%;
-	top: 70%;
-	width: 30%;
+	top: 45%;
+	width: 25%;
 	background-color: white;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 0;
 	
 
 	h4 {
@@ -102,12 +109,12 @@
 	}
 
 	.icon {
-		width: 75%;
+		width: 50%;
 		display: flex;
 		justify-content: space-evenly;
 
 		button {
-			width: 90px;
+			width: 80px;
 			height: 70px;
 			border-radius: 10px;
 			background-color: white;
@@ -131,6 +138,7 @@
 	form {
 		
 		padding: 16px 24px 24px;
+		width: 90%;
 		a {
 			color: rgb(52, 71, 103);
 			font-weight: bold;
@@ -191,6 +199,8 @@
 	}
 
 	.divsignIn {
+		
+		padding: 20px;
 		span {
 			margin-right: 10px;
 		}
