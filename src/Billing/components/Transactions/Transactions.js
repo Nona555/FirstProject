@@ -26,7 +26,7 @@ function Transaction() {
                                 : <img src={exclamation} alt="Arrow"/>
                             }
                             <div>
-                                <p>{item.name}</p>
+                                <h6>{item.name}</h6>
                                 <p>{item.date}</p>
                             </div>
                         </div>
