@@ -38,6 +38,12 @@
             a{
                 color: rgb(103, 116, 142);
                  font-weight: bold; 
+
+                 i{
+                    &:hover{
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }
@@ -62,11 +68,16 @@
             border-radius: 10px;
             background-size: cover;
             background: linear-gradient(310deg, rgba(20, 23, 39, 0.8), rgba(58, 65, 111, 0.8)),
-                url(../images/developerImg.jpg) transparent;
+                url(../DashBoardImages/developerImg.jpg) transparent;
             background-size: cover;
 
             a{
                 color: white;
+                i{
+                    &:hover{
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }

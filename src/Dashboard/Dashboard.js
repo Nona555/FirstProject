@@ -14,7 +14,7 @@ const Dashboard = () => {
             <main style={{ display: 'grid', gridGap: '20px' }}>
                 <DashboardHeader />
                 <div className="dayInfoContainer">
-                    {TodayDate.map(item => <DashboardToday todayInfo={item.todayInfo} todayCount={item.todayCount} todayIcon={item.todayIcon} />)}
+                    {TodayDate.map(item => <DashboardToday isGrow={item.isGrow === true ? 'rgb(130, 214, 22)' : 'rgb(234, 6, 6)'} todayGrow={item.todayGrow} todayInfo={item.todayInfo} todayCount={item.todayCount} todayIcon={item.todayIcon} />)}
                 </div>
                 <DashboardTop />
                 <DashboardMiddle />

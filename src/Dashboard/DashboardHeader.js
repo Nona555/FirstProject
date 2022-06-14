@@ -3,6 +3,8 @@ import './Dashboard.scss';
 function DashboardHeader() {
     return (
         <header>
+            <div className='head'>
+
             <div className='dashLeft'>
                 <p><i class="fa-solid fa-house"></i> / Dashboard</p>
                 <h4>Dashboard</h4>
@@ -23,6 +25,7 @@ function DashboardHeader() {
 
                 </div>
 
+            </div>
             </div>
         </header>
     )

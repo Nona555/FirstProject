@@ -1,14 +1,24 @@
-*{
+* {
   box-sizing: border-box;
 }
 header {
   width: 95%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px 10px;
-  background: #f8f9fa;
-  border-radius: 20px;
+  height: 80px;
+  .head {
+    position: fixed;
+    background: #f8f9fa;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+  }
 
   .dashLeft {
     h4 {
@@ -69,12 +79,27 @@ main {
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 8px 14px 6px rgb(0 0 0 / 5%);
-      width: 65%;
+      width: 75%;
+      .digitals {
+        display: flex;
+        align-items: center;
+        width: 104%;
+        justify-content: space-between;
+        h3 {
+          color: rgb(52, 71, 103);
+        }
+        p {
+          font-weight: bold;
+        }
+      }
       h5 {
         color: rgb(103, 116, 142);
       }
-      h3 {
-        color: rgb(52, 71, 103);
+      img {
+        background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+        width: 40px;
+        border-radius: 5px;
+        padding: 11px;
       }
     }
   }

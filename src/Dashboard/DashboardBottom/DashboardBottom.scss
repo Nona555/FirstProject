@@ -7,6 +7,22 @@
         border-radius: 20px;
         width: 630px;
         height: 500px;
+        .item1Head{
+            p{
+                margin: 0 0 20px 30px;
+                i{
+                    color: rgb(23, 193, 232);
+                }
+            }
+
+            .headTop{
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                align-items: center;
+                margin: 15px auto;
+            }
+        }
     }
     .DashboardBottomItem2 {
         background: white;

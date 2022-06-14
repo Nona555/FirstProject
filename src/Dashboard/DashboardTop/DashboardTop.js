@@ -1,5 +1,6 @@
 import './DashboardTop.scss'
-import rocketImg from '../images/rocket.webp'
+// import rocketImg from '../DashboardImages/rocket.webp'
+import rocketImg from '../DashBoardImages/rocket.webp'
 function DashboardTop() {
     return (
         <div className='dashboardTop'>
@@ -11,10 +12,10 @@ function DashboardTop() {
                         <p>From colors, cards, typography to complex elements,
                             you will find the full documentation.</p>
                     </div>
-                    <a href="#">Read More</a>
+                    <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div className="rocket">
-                    <img src={rocketImg} width="100%" />
+                    <img alt='rocket' src={rocketImg} width="100%" />
 
                 </div>
             </div>
@@ -23,7 +24,7 @@ function DashboardTop() {
                     <h2>Work with the rockets</h2>
                     <p>Wealth creation is an evolutionarily recent positive-sum game.
                         It is all about who take the opportunity first.</p>
-                    <a href="#">Read More</a>
+                    <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
