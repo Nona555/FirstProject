@@ -1,0 +1,202 @@
+.signin{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 75vh;
+    margin: 0px;
+    
+.text{
+    margin-left: 213px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    opacity: 1;
+    background: transparent;
+    color: rgb(52, 71, 103);
+    
+h3{
+    font-size: 1.875rem;
+    line-height: 1.375;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: 0em;
+    opacity: 1;
+    text-transform: none;
+    vertical-align: unset;
+    color: rgb(23, 193, 232);
+    font-weight: 700;
+    background-image: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+    display: inline-block;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 1;
+    margin: 5px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+p{
+    margin: 5px;
+    padding-left: 20px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.01071em;
+    opacity: 1;
+    text-transform: none;
+    vertical-align: unset;
+    text-decoration: none;
+    color: rgb(103, 116, 142);
+    font-weight: 400;
+}
+form { 
+    padding: 16px 24px 24px;
+    a {
+        color: rgb(52, 71, 103);
+        font-weight: bold;
+    }
+
+    label{
+        
+        display: flex;
+        input{
+            width: 20px;
+            height: 20px;
+        }
+        span {
+            margin: 0px 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        
+    }
+    label{
+        margin-left: 4px;
+        opacity: 1;
+        background: transparent;
+        color: rgb(52, 71, 103);
+    }
+
+    .inp {
+        width: 100%;
+        display: block;
+        height: 40px;
+        box-sizing: border-box;
+        padding: 8px 12px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border: 0.0625rem solid rgb(133, 133, 133);
+        font: inherit;
+        
+        
+        &:focus  {
+            outline: 1px solid rgb(33, 212, 253);
+            border: 0.0625rem solid rgb(33, 212, 253);
+        }
+        
+    }
+    button{
+        
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        outline: 0px;
+        border: 0px;
+        margin: 0px;
+        cursor: pointer;
+        vertical-align: middle;
+        appearance: none;
+        text-decoration: none;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        letter-spacing: 0.02857em;
+        min-width: 64px;
+        width: 100%;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        font-size: 0.75rem;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        line-height: 1.4;
+        text-align: center;
+        text-transform: uppercase;
+        user-select: none;
+        transition: all 150ms ease-in 0s;
+        min-height: 2.5rem;
+        box-shadow: rgb(0 0 0 / 11%) 0rem 0.25rem 0.4375rem -0.0625rem, rgb(0 0 0 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+        padding: 0.75rem 1.5rem;
+        background-image: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+        background-position-y: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+        color: rgb(255, 255, 255);
+        background-size: 150% !important;
+        background-position-x: 25% !important;
+    }
+}
+.divsignUp{
+        margin-top: 24px;
+        text-align: center;
+        opacity: 1;
+        background: transparent;
+        color: rgb(52, 71, 103);
+    span{
+        margin: 0px;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        letter-spacing: 0.02857em;
+        opacity: 1;
+        text-transform: none;
+        vertical-align: unset;
+        text-decoration: none;
+        color: rgb(103, 116, 142);
+        font-weight: 400;
+    }
+    a{
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        letter-spacing: 0.02857em;
+        opacity: 1;
+        text-transform: none;
+        vertical-align: unset;
+        color: rgb(23, 193, 232);
+        font-weight: 500;
+        background-image: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+        display: inline-block;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        z-index: 1;
+        margin: 0px;
+    }
+}
+
+}
+
+}
+.image{
+        display: flex;
+        justify-content: flex-end;
+.backimg{
+        background: transparent;
+        margin-right: -150px;
+        width: 100%;
+        opacity: 1;
+        color: rgb(52, 71, 103);
+        transform: skewX(10deg);
+        overflow: hidden;
+        border-bottom-left-radius: 0.75rem;
+        left: -50rem;
+}
+}

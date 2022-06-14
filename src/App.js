@@ -3,6 +3,7 @@ import Footer from './Footer/Footer'
 import styles from './App.scss';
 // import HamoApp from './Hamo/HamoApp';
 import SignUp from './SignUp/SignUp';
+import SignIn from './SignIn/SignIn';
 import SidebarRight from './SidebarRight/SidebarRight';
 import Profile from './Profile/Profile';
 import Header from './Header/Header';
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className='app'>
       {location === '/SignUp' && <SignUp />}
+      {location === '/SignIn' && <SignIn />}
       {location === '/Profile' && <Profile />}
       {(location === '/Dashboard' || location === "/") && <Dashboard />}
       {location === '/billing' && <Billing />}
