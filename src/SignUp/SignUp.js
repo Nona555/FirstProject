@@ -66,9 +66,7 @@ function SignUp() {
 					</div>
 				</div> */}
 			</div>
-			<div>
-				<Footer />
-			</div>
+			<Footer />
 		</div>
 	)
 	
