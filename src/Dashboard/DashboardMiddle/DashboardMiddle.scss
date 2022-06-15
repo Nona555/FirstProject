@@ -7,8 +7,6 @@
         border-right-width: 20px;
         width: 550px;
         height: 435px;
-        display: flex;
-        justify-content: center;
         border-radius: 20px;
     }
 
@@ -18,12 +16,42 @@
         width: 395px;
         height: 435px;
         display: flex;
-        justify-content: center;
         border-radius: 20px;
-        div {
+        flex-direction: column;
+
+        .empty {
             width: 90%;
             height: 50%;
             border: 1px solid;
+        }
+        .middleBottom {
+            img {
+                width: 0.75rem;
+            }
+            .ucsi {
+                display: flex;
+                justify-content: space-around;
+                margin: 20px 0;
+
+                span{
+                    margin-left: 5px;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    img {
+                        background: red;
+                        padding: 5px;
+                        width: 23px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            h2{
+                color: rgb(52, 71, 103);
+                margin-bottom: 10px;
+            }
         }
     }
 }
