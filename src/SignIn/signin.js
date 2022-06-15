@@ -1,4 +1,4 @@
-import './SignIn.scss';
+import './signin.scss';
 import Header from '../Header/Header';
 import CustomCheckbox from '../Custom/CustomCheckbox/CustomCheckbox';
 import back from '../assets/signinpot/background.jpg';

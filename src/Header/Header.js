@@ -17,19 +17,19 @@ function Header() {
                     <p> Soft UI Dashbord </p>
                     </div>
                     <ul className='navigation'>
-                     <a><li>
+                     <a href='/Dashboard'><li>
                      <img style={{width: 18, marginRight: 5}} src={dash}/>
                         Dashboard
                         </li></a>
-                     <a><li>
+                     <a href='/Profile'><li>
                         <img style={{width: 18, marginRight: 5}} src={profile}/>
                         Profile
                     </li></a>
-                     <a><li>
+                     <a href='/SignUp'><li>
                        <img style={{width:18,marginRight:5}} src={user}/>
                         Sign Up 
                         </li></a>
-                     <a><li>
+                     <a href='/SignIn'><li>
                      <img style={{width:18,marginRight:5}} src={key}/>
                         
                         Sign In 
