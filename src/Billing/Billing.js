@@ -20,7 +20,7 @@ function Billing () {
 			<div className='grid_container'>
 				<LeftSidebar />
 				<div className={'wholeRightSide'} >
-					<div className='grid_header'></div>
+					<div className='grid_header'>Header</div>
 					<div className='grid_main'>
 					<div>
 						<img src={waifi} />
