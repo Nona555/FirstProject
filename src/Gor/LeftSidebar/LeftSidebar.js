@@ -56,7 +56,7 @@ function LeftSidebar () {
                     </a>
                 </li>
                 <li>
-                    <a href='#' className='links'>
+                    <a href='/SignIn' className='links'>
                         <div>
                             <img src={signing} />
                         </div>
