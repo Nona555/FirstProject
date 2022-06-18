@@ -11,10 +11,16 @@ import { useEffect, useState } from 'react';
 import Dashboard from './Dashboard/Dashboard';
 import LeftSidebar from './Gor/LeftSidebar/LeftSidebar';
 import Billing from './Billing/Billing';
+import { useSelector, useDispatch } from 'react-redux';
+import { decrement, increment, isLoged } from './redux/action';
 
 function App() {
   const [ location, setLocation ] = useState('/Dashboard');
   const [ data, setData ] = useState();
+  const dispatch = useDispatch();
+  // const count = useSelector(state => state.counterReducer);
+  // const loged = useSelector(state => state.logReducer);
+  const { counterReducer, logReducer } = useSelector(state => state)
   useEffect(() => {
     setLocation(window.document.location.pathname);
     fetch('https://api.github.com/users')
@@ -30,6 +36,10 @@ function App() {
       {(location === '/Dashboard' || location === "/") && <Dashboard />}
       {location === '/billing' && <Billing />}
       {/* {data && data.map(item => <div key={item.id}>{item.login}</div>)} */}
+      {/* Counter {counterReducer}
+      <button onClick={() => dispatch(increment(5))}>+</button>
+      <button onClick={() => dispatch(decrement())}>-</button>
+      <button onClick={() => dispatch(isLoged())}>Log out</button> */}
     </div>
   );
 }
