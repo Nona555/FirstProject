@@ -1,6 +1,3 @@
-
-
-
 .grid_container{
 	width: 100%;
 	display: flex;
@@ -28,17 +25,21 @@
 		}
 	}
 	.grid_header {
-		padding: 30px;
-		
+		@media (max-width:199px) {
+			padding: 20px;
+		}
+		width: 90%;
+		// height: 70px;
+		padding: 34px;
+		border: 1px solid #82d616;
 	}
-
 
 
 
 
 	.grid_main {
 		display: grid;
-		grid-template-columns: repeat(5 , auto);
+		grid-template-columns: repeat(5 , 1fr);
 		grid-gap: 20px;
 		padding: 20px;
 
@@ -69,16 +70,19 @@
 
 			img {
 				width: 20px;
-				// padding: 25px;
+				padding: 5px;
 			}
 
 			h5 {
-				margin: 24px 0px 40px 0px;
+				margin: 24px 0px 40px;
 				font-size: 1.25rem;
 				line-height: 1.375;
 				font-family: Roboto, Helvetica, Arial, sans-serif;
 				letter-spacing: 0em;
 				opacity: 1;
+				text-transform: none;
+				vertical-align: unset;
+				text-decoration: none;
 				color: rgb(255, 255, 255);
 				font-weight: 500;
 				padding-bottom: 8px;
@@ -96,14 +100,12 @@
 			}
 			
 			.card_info{
-				width: 180px;
 				display: flex;
-				justify-content: space-between;
 
 				h6{
 					color: rgb(255, 255, 255);
 					font-weight: 500;
-					// margin-right: 20px;
+					margin-right: 20px;
 				}
 
 				p{
@@ -125,16 +127,14 @@
 			}
 
 			@media (max-width:991px){
-				grid-column: 1/6;
-				grid-row: 1/2;
-
+				grid-column: 1/7;
 				.card{
 					img {
 						width: 130px;
 					}
 				}
 			}
-
+			
 			@media (max-width:767px){
 				grid-column: 1 / 6;
 				grid-row: 1/2;
@@ -143,6 +143,7 @@
 		}
 
 		.salary,.paypal {
+			width: 100%;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -183,6 +184,7 @@
 			}
 
 			p{
+				width: 100%;
 				margin: 5px 0px;
 				font-family: Roboto, Helvetica, Arial, sans-serif;
 				font-size: 0.75rem;
@@ -199,6 +201,7 @@
 			
 
 			h5 {
+				width: 100%;
 				font-size: 1.25rem;
 				line-height: 1.375;
 				font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -211,7 +214,17 @@
 			
 
 			.salary_info{
+				width: 100%;
 				text-align: center;
+				word-wrap: none;
+
+
+				h6 {
+					width: 100%;
+				}
+				p {
+					width: 100%;
+				}
 			}
 
 			
@@ -223,12 +236,10 @@
 
 			@media (max-width:1199px) {
 				grid-column: 1/3;
-				padding-bottom: 20px;
 			}
 
 			@media (max-width:991px) {
 				grid-column: 1/4;
-				grid-row: 2/3;
 			}
 
 			@media (max-width:767px){
@@ -236,6 +247,7 @@
 				grid-row: 2/3;
 			
 			}
+
 			
 
 		}
@@ -250,12 +262,10 @@
 
 			@media (max-width:1199px) {
 				grid-column: 3/5;
-				padding-bottom: 20px;
 			}
 
 			@media (max-width:991px) {
 				grid-column: 4/6;
-				grid-row: 2/3;
 			}
 
 			@media (max-width:767px){
@@ -265,9 +275,11 @@
 		}
 
 		& > div:nth-child(4) {
+			width: 20vw;
+			min-width: 20vw;
 			grid-column: 5 / 6;
 			grid-row: 1/3;
-			padding: 15px;
+			padding: 10px;
 			background-color: white;
 			border-radius: 1rem;
 			box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
@@ -365,8 +377,9 @@
 				grid-row: 1/4;
 			}
 			@media (max-width:991px) {
+				width: calc(100% - 20px);
 				grid-column: 1/6;
-				grid-row: 5/6;
+				grid-row: 4;
 			}
 
 			@media (max-width:767px){
@@ -419,7 +432,7 @@
 				justify-content: space-between;
 
 				.master, .visa {
-					width: 43%;
+					width: 44%;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
@@ -435,7 +448,7 @@
 				}
 
 				.master {
-					margin-right: 15px;
+					margin-right: 20px;
 				}
 
 				.master_img , .visa_img {
@@ -443,7 +456,7 @@
 					align-items: center;
 
 					img{
-						margin-right: 15px;
+						margin-right: 20px;
 					}
 				}
 				
@@ -462,7 +475,6 @@
 
 			@media (max-width:991px) {
 				grid-column: 1/6;
-				grid-row: 4/5;
 			}
 
 			@media (max-width:767px){
@@ -576,7 +588,6 @@
 
 			@media (max-width:991px) {
 				grid-column: 1/4;
-				grid-row: 6/7;
 			}
 
 			@media (max-width:767px){
@@ -653,15 +664,15 @@
 
 			@media (max-width:991px) {
 				grid-column: 4/6;
-				grid-row: 6/7;
 			}
-
+			
+			
 			@media (max-width:767px) {
 				grid-column: 1/6;
 				grid-row: 7/8;
 			}
 
-			
+
 		}
 
 		
