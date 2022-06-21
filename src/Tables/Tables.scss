@@ -1,0 +1,231 @@
+.tables_container{
+
+	.tables_main_container {
+		width: calc(100% - 280px);
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		left: 280px; 
+
+		.tables_header {
+			padding: 30px;
+		}
+
+		.main_container_user {
+
+			h5{
+				font-size: 1rem;
+				line-height: 1.625;
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				font-weight: 500;
+				letter-spacing: 0.0075em;
+				opacity: 1;
+				color: rgb(52, 71, 103);
+			}
+
+			h6{
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				font-size: 0.75rem;
+				line-height: 1.25;
+				letter-spacing: 0.03333em;
+				opacity: 1;
+				color: rgb(103, 116, 142);
+				font-weight: 600;
+			}
+
+			p {
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				font-size: 0.75rem;
+				font-weight: 400;
+				line-height: 1.25;
+				letter-spacing: 0.03333em;
+				opacity: 1;
+				color: rgb(131, 146, 171);
+			}
+
+			a {
+				font-family: Roboto, Helvetica, Arial, sans-serif;
+				font-size: 0.75rem;
+				font-weight: 400;
+				line-height: 1.25;
+				letter-spacing: 0.03333em;
+				opacity: 1;
+				text-decoration: none;
+				color: rgb(131, 146, 171);
+
+			}
+
+			.tables_title {
+				display: flex;
+				
+				p {
+					width: auto;
+					padding: 12px 24px 10px;
+					text-align: left;
+					font-size: 0.65rem;
+					font-weight: 700;
+					border-bottom: 0.0625rem solid rgb(233, 236, 239);
+					opacity: 0.7;
+					background: transparent;
+					color: rgb(131, 146, 171);
+				}
+			}
+
+			.tables_title_div{
+				width: 55%;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.tables_user_info {
+				display: flex;
+				padding: 8px;
+				border-bottom: 0.0625rem solid rgb(222, 226, 230);
+
+				.bgstatus{
+					padding: 5px;
+					height: auto;
+					padding: 0.575em 0.775em 0.4em;
+					font-size: 0.65rem;
+					font-weight: 700;
+					text-transform: uppercase;
+					line-height: 1;
+					border: none;
+					border-radius: 0.25rem;
+					color: rgb(255, 255, 255);
+					position: relative;
+					transform: none;
+				}
+
+				.tables_img_user {
+					width: 40%;
+					display: flex;
+
+					img {
+						width: 9%;
+						border-radius: 10px;
+						margin-right: 20px;
+					}
+				}
+			}
+
+			.tables_info_user {
+				width: 55%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+
+			.tabels_project {
+				width: 95%;
+				margin-top: 50px;
+
+				.tabels_project_title {
+					display: flex;
+					justify-content: space-between;
+					border-bottom: 0.0625rem solid rgb(222, 226, 230);
+					padding: 8px;
+					margin-bottom: 20px;
+
+
+					.budget_status {
+						width: 25%;
+						display: flex;
+						justify-content: space-between;
+						margin-left: 40px;
+						
+					}
+
+					p { 
+						font-size: 0.65rem;
+						font-weight: 700;
+						border-bottom: 0.0625rem solid rgb(233, 236, 239);
+						opacity: 0.7;
+						background: transparent;
+						color: rgb(131, 146, 171);
+					}
+				}
+
+				h5 {
+					margin: 20px 0px ;
+				}
+
+
+				.project_main {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 8px;
+					border-bottom: 0.0625rem solid rgb(222, 226, 230);;
+
+					div{
+						font-family: Roboto, Helvetica, Arial, sans-serif;
+						font-size: 0.875rem;
+						line-height: 1.5;
+						letter-spacing: 0.02857em;
+						opacity: 1;
+						color: rgb(103, 116, 142);
+						font-weight: 500;
+					}
+
+					img {
+						width: 2%;
+					}
+
+					.tabels_project_img {
+						width: 15%;
+						display: flex;
+						align-items: center;
+
+						img {
+							width: 30%;
+							margin-right: 20px;
+						}
+
+						span {
+							font-family: Roboto, Helvetica, Arial, sans-serif;
+							font-size: 0.875rem;
+							line-height: 1.5;
+							letter-spacing: 0.02857em;
+							opacity: 1;
+							color: rgb(52, 71, 103);
+							font-weight: 700;
+						}
+					}
+
+					.project_completion_canteiner {
+						width: 15%;
+						display: flex;
+						align-items: center;
+
+						span {
+							font-family: Roboto, Helvetica, Arial, sans-serif;
+							font-size: 0.75rem;
+							line-height: 1.25;
+							letter-spacing: 0.03333em;
+							opacity: 1;
+							color: rgb(103, 116, 142);
+							font-weight: 500;
+						}
+
+						.project_completion {
+							width: 100%;
+							height: 0.1875rem;
+							border-radius: 0.5rem;
+							background-color: rgb(233, 236, 239);
+						}
+
+						.project_completion_lod {
+							height: 0.375rem;
+							border-radius: 0.25rem;
+						}
+					}
+
+					
+				}
+			}
+		}
+	}
+
+}

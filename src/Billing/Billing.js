@@ -22,117 +22,117 @@ function Billing () {
 				<div className={'wholeRightSide'} >
 					<div className='grid_header'>Header</div>
 					<div className='grid_main'>
-					<div>
-						<img src={waifi} />
-						<h5>4562   1122   4594   7852</h5>
-						<div className='card'>
-							<div className='card_info'>
-								<div>
-									<p>Card Holder</p>
-									<h6>Jack Peterson</h6>
+						<div>
+							<img src={waifi} />
+							<h5>4562   1122   4594   7852</h5>
+							<div className='card'>
+								<div className='card_info'>
+									<div>
+										<p>Card Holder</p>
+										<h6>Jack Peterson</h6>
+									</div>
+									<div>
+										<p>Expires</p>
+										<h6>11/22</h6>
+									</div>
 								</div>
 								<div>
-									<p>Expires</p>
-									<h6>11/22</h6>
+									<img src={mastercard} />
 								</div>
+								
 							</div>
-							<div>
-								<img src={mastercard} />
+						</div>
+						<div className='salary'>
+							<div className='img_salary'>
+								<img src={salary} />
 							</div>
-							
+							<div className='salary_info'>
+								<h6>Salary</h6>
+								<p>Belong Interactive</p>
+							</div>
+							<hr className='row'></hr>
+							<div><h5>+$2000</h5></div>
 						</div>
-					</div>
-					<div className='salary'>
-						<div className='img_salary'>
-							<img src={salary} />
-						</div>
-						<div className='salary_info'>
-							<h6>Salary</h6>
-							<p>Belong Interactive</p>
-						</div>
-						<hr className='row'></hr>
-						<div><h5>+$2000</h5></div>
-					</div>
-					<div className='paypal'>
-						<div className='img_salary'>
-							<img src={paypal} />
-						</div>
-						<div className='salary_info'>
-							<h6>Paypal</h6>
-							<p>Freelance Payment</p>
-						</div>
-						<hr className='row'></hr>
-						<div><h5>$455.00</h5></div>
-					</div>
-					<div>
-						<div className='invoices_div'>
-							<h6>Invoices</h6>
-							<button className='view_button'>VIEW ALL</button>
+						<div className='paypal'>
+							<div className='img_salary'>
+								<img src={paypal} />
+							</div>
+							<div className='salary_info'>
+								<h6>Paypal</h6>
+								<p>Freelance Payment</p>
+							</div>
+							<hr className='row'></hr>
+							<div><h5>$455.00</h5></div>
 						</div>
 						<div>
-							{monthtData.map(item => 
-								<div className='container_month_info'>
-									<div className='month_info'>
-										<h5>{item.month}</h5>
-										<p>{item.code}</p>
-									</div>
-									<div className='money_info'>
-										<p>{item.money}</p>
-										<div style={{display: "flex" ,  alignItems: 'center' }}>
-											<img src={pdf} />
-											<span>PDF</span>
+							<div className='invoices_div'>
+								<h6>Invoices</h6>
+								<button className='view_button'>VIEW ALL</button>
+							</div>
+							<div>
+								{monthtData.map(item => 
+									<div className='container_month_info'>
+										<div className='month_info'>
+											<h5>{item.month}</h5>
+											<p>{item.code}</p>
+										</div>
+										<div className='money_info'>
+											<p>{item.money}</p>
+											<div style={{display: "flex" ,  alignItems: 'center' }}>
+												<img src={pdf} />
+												<span>PDF</span>
+											</div>
 										</div>
 									</div>
-								</div>
-							)}
-						</div>
-					</div>
-					<div>
-						<div className='pay_method'>
-							<h6>Payment Method</h6>
-							<button>+ ADD NEW CARD</button>
-						</div>
-						<div className='master_visa'>
-							<div className='master'>
-								<div className='master_img'>
-									<img src={mastercard} />
-									<h6>**** **** **** 7852</h6>
-								</div>
-								<img className='edit' src={edit} width={5}/>
-							</div>
-							<div className='visa'>
-								<div className='visa_img'>
-									<img src={visa} />
-									<h6>**** **** **** 5248</h6>
-								</div>
-								<img className='edit' src={edit} width={5}/>
+								)}
 							</div>
 						</div>
-					</div>
-					<div>
-						<h6 style={{marginBottom: '50px'}}>Billing Information</h6>
-						{ cardData.map(item => 
-							<div className='user_card_info'>
-								<div className='name_info'>
-									<h6>{item.name}</h6>
-									<div className='buttom_delete_edit'>
-										<button className='buttom_delete'>
-											<img src={bucket} />DELETE
-										</button>
-										<button className='buttom_edit'>
-											<img src={edit} />EDIT
-										</button>
+						<div>
+							<div className='pay_method'>
+								<h6>Payment Method</h6>
+								<button>+ ADD NEW CARD</button>
+							</div>
+							<div className='master_visa'>
+								<div className='master'>
+									<div className='master_img'>
+										<img src={mastercard} />
+										<h6>**** **** **** 7852</h6>
+									</div>
+									<img className='edit' src={edit} width={5}/>
+								</div>
+								<div className='visa'>
+									<div className='visa_img'>
+										<img src={visa} />
+										<h6>**** **** **** 5248</h6>
+									</div>
+									<img className='edit' src={edit} width={5}/>
+								</div>
+							</div>
+						</div>
+						<div>
+							<h6 style={{marginBottom: '50px'}}>Billing Information</h6>
+							{ cardData.map(item => 
+								<div className='user_card_info'>
+									<div className='name_info'>
+										<h6>{item.name}</h6>
+										<div className='buttom_delete_edit'>
+											<button className='buttom_delete'>
+												<img src={bucket} />DELETE
+											</button>
+											<button className='buttom_edit'>
+												<img src={edit} />EDIT
+											</button>
+										</div>
+									</div>
+									<div>
+										<div className='flex'><p>Company Name:</p><span>{item.Company}</span></div>
+										<div className='flex'><p>Email Address:</p><span>{item.Email}</span></div>
+										<div className='flex'><p>VAT Number:</p><span>FRB1235476 </span></div>
 									</div>
 								</div>
-								<div>
-									<div className='flex'><p>Company Name:</p><span>{item.Company}</span></div>
-									<div className='flex'><p>Email Address:</p><span>{item.Email}</span></div>
-									<div className='flex'><p>VAT Number:</p><span>FRB1235476 </span></div>
-								</div>
-							</div>
-							) }
-					</div>
-					<Transaction />
+								) }
+						</div>
+						<Transaction />
 					</div>
 					<div className='grid_footer'><Footer /></div>
 				</div>
