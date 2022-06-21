@@ -34,10 +34,9 @@ function App() {
       {location === '/SignUp' && <SignUp />}
       {location === '/SignIn' && <SignIn />}
       {location === '/Profile' && <Profile />}
-      {/* {(location === '/Dashboard' || location === "/") && <Dashboard />} */}
+      {(location === '/Dashboard' || location === "/") && <Dashboard />}
       {location === '/billing' && <Billing />}
-	  {/* {location === '/billing' && <Tables />} */}
-	  <Tables />
+      {location === '/tables' && <Tables />}
       {/* {data && data.map(item => <div key={item.id}>{item.login}</div>)} */}
       {/* Counter {counterReducer}
       <button onClick={() => dispatch(increment(5))}>+</button>

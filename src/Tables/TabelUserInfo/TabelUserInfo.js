@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import { tablesInfo } from '../../Billing/FakeDate/FakeDate'
 
 function TabelUserInfo() {
@@ -17,9 +18,10 @@ function TabelUserInfo() {
 							<h6>{ item.stat }</h6>
 							<p>{ item.job }</p>
 						</div>
-						{item.status === 'ONLINE' ? 
-						<div className='bgstatus' style={{background:'linear-gradient(310deg, rgb(23, 173, 55), rgb(152, 236, 45))'}}>{ item.status }</div>:
-						<div className='bgstatus' style={{background:'linear-gradient(310deg, rgb(98, 117, 148), rgb(168, 184, 216))'}}>{ item.status }</div>}
+						<div className={classNames('bgstatus', {
+							'bgstatusonline': item.status === 'ONLINE',
+							'bgstatusOffline': item.status === 'OFFLINE'
+						})}>{ item.status }</div>
 						<p>{ item.data }</p>
 						<a href='#'>Edit</a>
 					</div>
