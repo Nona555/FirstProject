@@ -7,17 +7,11 @@ import rocket from './assets/rocket.svg'
 import signing from './assets/signing.svg'
 import profile from './assets/profile.svg'
 import star from './assets/star.svg';
-import { useSelector } from 'react-redux';
 
 function LeftSidebar () {
-    const bgColor = useSelector(state => state.colorReducer);
-    
     return(
         <div className="LeftSidebar">
             <div className='title'>
-                <div style={{width: 100, height: 100, background: bgColor}}>
-
-                </div>
                 <a href='/Dashboard'>
                     <span>                    
                         <img  src={logo} />
@@ -36,7 +30,7 @@ function LeftSidebar () {
                     </a>
                 </li>
                 <li>
-                    <a href='#' className='links'>
+                    <a href='/tables' className='links'>
                         <div>
                             <img src={building} />
                         </div>

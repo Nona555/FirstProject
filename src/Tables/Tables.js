@@ -9,6 +9,7 @@ import { tablesInfo } from '../Billing/FakeDate/FakeDate'
 import { tablesProject } from '../Billing/FakeDate/FakeDate'
 import TabelUserInfo from './TabelUserInfo/TabelUserInfo';
 import TableProjects from './TableProjects/TableProjects';
+import Header from '../Header/Header';
 
 
 function Tables () {
@@ -16,9 +17,7 @@ function Tables () {
 		<div className='tables_container'>
 			<LeftSidebar />
 			<div className='tables_main_container'>
-				<div className='tables_header'>
-					header
-				</div>
+				<Header />
 				<div className='main_container_user'>
 					<h5>Authors table</h5>
 					<div className='tables_title'>
@@ -32,8 +31,10 @@ function Tables () {
 							<p>ACTION</p>
 						</div>
 					</div>
-					< TabelUserInfo />
-					<div className='tabels_project'>
+					<TabelUserInfo />
+				</div>
+				<div className='main_container_user'>
+				<div className='tabels_project'>
 						<h5>Projects table</h5>
 						<div className='tabels_project_title'>
 							<p>PROJECT</p>
@@ -46,7 +47,7 @@ function Tables () {
 						</div>
 						<TableProjects />
 					</div>
-				</div>
+					</div>
 				<div className='footer_container'>
 					<Footer />
 				</div>
