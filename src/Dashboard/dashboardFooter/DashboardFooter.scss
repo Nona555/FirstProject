@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+    p{
+        color: rgb(103, 116, 142);
+        span{
+            color: rgb(52, 71, 103);
+            font-weight: bold;
+        }
+    }
+    div{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: rgb(103, 116, 142);
+        }
+    }
+}

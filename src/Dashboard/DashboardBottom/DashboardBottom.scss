@@ -1,0 +1,48 @@
+.DashboardBottom {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .DashboardBottomItem1 {
+        background: white;
+        border-radius: 20px;
+        width: 630px;
+        height: 500px;
+        .item1Head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 25px;
+            p{
+                margin-top: 20px;
+                i {
+                    font-size: 20px;
+                    color: rgb(103, 116, 142);
+                }
+            }
+        }
+    }
+    .DashboardBottomItem2 {
+        background: white;
+        border-radius: 20px;
+        width: 315px;
+        height: 500px;
+        padding: 20px 0 0 20px;
+        h2 {
+            color: rgb(52, 71, 103);
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 10px 0;
+            color: rgb(103, 116, 142);
+        }
+        .orderDiv{
+            .orderRight{
+                
+                p{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}

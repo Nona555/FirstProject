@@ -93,7 +93,6 @@
         }
     }
     .documentation-card{
-        
         opacity: 1;
         background: transparent;
         position: relative;
@@ -101,20 +100,21 @@
         background-repeat: no-repeat;
         border-radius: 1rem;
         background-size: cover;
+        background: linear-gradient(310deg, rgba(33, 82, 255, 0.3), rgb(33, 212, 253, 0.3));
 
-        .card::after{
-            content: "";
-            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
-            display: block;
-            height: 100%;
-            width: 100%;
-            border-radius: 1rem;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            opacity: 0.65;
-            z-index: -1;
-        }
+
+        // .card::after{
+        //     content: "";
+        //     display: block;
+        //     height: 100%;
+        //     width: 100%;
+        //     border-radius: 1rem;
+        //     position: absolute;
+        //     top: 0px;
+        //     left: 0px;
+        //     opacity: 0.65;
+        //     z-index: -1;
+        // }
         .card{
             z-index: 0;
             display: flex;

@@ -11,7 +11,6 @@ import TabelUserInfo from './TabelUserInfo/TabelUserInfo';
 import TableProjects from './TableProjects/TableProjects';
 import Header from '../Header/Header';
 
-
 function Tables () {
 	return (
 		<div className='tables_container'>

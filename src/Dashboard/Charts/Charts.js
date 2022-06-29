@@ -9,7 +9,7 @@ const options = {
     type: 'area',
     borderRadius: 10,
     marginTop: 30,
-    height: 400,
+    height: 200,
   },
   yAxis: {
     title: {

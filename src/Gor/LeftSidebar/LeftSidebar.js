@@ -7,8 +7,11 @@ import rocket from './assets/rocket.svg'
 import signing from './assets/signing.svg'
 import profile from './assets/profile.svg'
 import star from './assets/star.svg';
+import { useSelector } from 'react-redux';
 
 function LeftSidebar () {
+    const backgroundColor = useSelector(state => state.colorReducer);
+    console.log(backgroundColor);
     return(
         <div className="LeftSidebar">
             <div className='title'>
@@ -71,7 +74,7 @@ function LeftSidebar () {
                     </a>
                 </li>
             </ul>
-            <div className='documentation-card'>
+            <div className='documentation-card' style={{background: backgroundColor}}>
                 <div className='card'>
                     <div className='star'>
                         <img src={star} />
